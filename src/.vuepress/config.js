@@ -30,8 +30,8 @@ module.exports = {
                 link: '/guide/',
             },
             {
-                text: 'Config',
-                link: '/config/'
+                text: 'API',
+                link: '/API/'
             },
             {
                 text: 'Github',
@@ -42,9 +42,9 @@ module.exports = {
             '/guide/': [
                 {
                     title: 'Guide',
-                    collapsable: false,
+                    collapsable: true,
                     children: [
-                        'using-vue',
+                        '',
                     ]
                 }
             ],
