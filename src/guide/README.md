@@ -2,6 +2,8 @@
 sidebar: auto
 ---
 
+# ModularKit
+
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4eff78558cbc47c0b929dd1c45d12bda)](https://www.codacy.com/gh/NukaWorks/ModularKit/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NukaWorks/ModularKit&amp;utm_campaign=Badge_Grade)
 [![Nightly Builder](https://github.com/NukaWorks/ModularKit/actions/workflows/prebuild-nightly.yml/badge.svg?branch=main)](https://github.com/NutDevs-org/ModularKit/actions/workflows/prebuild-nightly.yml)
 [![CodeQL](https://github.com/NukaWorks/ModularKit/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/NukaWorks/ModularKit/actions/workflows/codeql-analysis.yml)
@@ -10,7 +12,6 @@ sidebar: auto
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/NukaWorks/ModularKit)
 ![GitHub Licence](https://img.shields.io/github/license/NutDevs-org/ModularKit)
 
-# ModularKit
 ## What is ModularKit ?
 
 **ModularKit**, a lightweight but powerful Java micro-framework for creating
@@ -27,7 +28,7 @@ Checkout the documentation on the documentation folder: **[docs/](https://github
 
 First, you need to create a new project (maven recommended) and add **ModularKit** dependency :
 
-### For creating a modular-based app (Client side) :
+### Client-Side Module
 
 ```xml
 <dependency>
@@ -37,7 +38,7 @@ First, you need to create a new project (maven recommended) and add **ModularKit
 </dependency>
 ```
 
-### For external module (Module side) :
+### Module-Side Module
 #### Create manualy
 ```xml
 <dependency>
@@ -47,12 +48,12 @@ First, you need to create a new project (maven recommended) and add **ModularKit
     <scope>provided</scope>
 </dependency>
 ```
-#### Or use the ModuleTemplate
-Use this ModuleTemplate : https://github.com/NukaWorks/ModuleTest
+#### Use ModuleTest
+Use ModuleTest for making a module easy-way : https://github.com/NukaWorks/ModuleTest
 
 ## Examples
 
-### How to create a Modular hello-world
+### HelloWorld
 
 First example : **HelloWorld** !
 
@@ -74,7 +75,7 @@ public class ModuleTest extends ModularModule {
 }
 ```
 
-An another example with module-dependencies : you can add others dependant module by this way :
+Another example with module-dependencies : you can add others dependant module by this way :
 
 ```java
 package com.example;
@@ -97,7 +98,7 @@ public class ModuleTest extends ModularModule {
 }
 ```
 
-### For registering and run a module
+### Registering & Run
 
 For running a module, let's try this little example :
 
@@ -118,7 +119,7 @@ public class Main {
 
 For ModSource and Module you need to generate a new uuid (Group 1).
 
-#### MacOS/Linux and others unix systems
+#### Uuid Generation
 
 ```shell
 ~$ uuidgen
