@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://old.modularkit.nuka.works/assets/logo.35a3867f.svg
 tagline: 
 actionText: Quick Start →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
+- title: Lightweight
   details: Feature 1 Description
-- title: Feature 2 Title
+- title: Simple
   details: Feature 2 Description
-- title: Feature 3 Title
+- title: Powerful
   details: Feature 3 Description
-footer: Made by NukaWorks with ❤️
+footer: ModularKit - NukaWorks.️
 ---
