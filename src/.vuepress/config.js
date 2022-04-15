@@ -10,6 +10,11 @@ module.exports = {
     ],
     theme: 'yuu',
     themeConfig: {
+        sidebar: 'auto',
+        smoothScroll: true,
+        displayAllHeaders: true,
+        searchPlaceholder: 'Search...',
+        lastUpdated: true,
         yuu: {
             defaultDarkTheme: true,
             defaultColorTheme: 'blue',
@@ -19,11 +24,6 @@ module.exports = {
                 darkTheme: 'Dark Mode'
             }
         },
-        repo: '',
-        editLinks: false,
-        docsDir: '',
-        editLinkText: '',
-        lastUpdated: true,
         nav: [
             {
                 text: 'Guide',
@@ -38,21 +38,24 @@ module.exports = {
                 link: 'https://github.com/NukaWorks/ModularKit'
             }
         ],
+        sidebarDepth: 2,
         sidebar: {
             '/guide/': [
                 {
-                    title: 'Guide',
+                    title: 'intro',
+                    path: '/',
                     collapsable: true,
-                    children: [
-                        '/',
-                    ]
+                    sidebarDepth: 1,
+                    children: ['/']
+                },
+                {
+                    title: 'Advanced',
+                    children: ['/external-modules'],
+                    initialOpenGroupIndex: -1
                 }
-            ],
+            ]
         }
     },
 
-    plugins: [
-        '@vuepress/plugin-back-to-top',
-        '@vuepress/plugin-medium-zoom',
-    ]
+    plugins: ['@vuepress/plugin-back-to-top']
 }
